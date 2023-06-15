@@ -1,6 +1,6 @@
 # Home-Assistance
 
-    pseudo code:
+### pseudo code:
     
     //open when needed
     var read_buffer;
@@ -36,3 +36,29 @@
           add item in the write_buffer whenever the SD card is free it also writes the buffer
         if read:
           add(length, file_pointer) in read_buffer;
+
+
+#### ESP
+
+        //in loop program of ESP
+        if inputmsg is available:
+            if inputmsg != previous inputmsg:
+                if inputmsg[0] = "some special commands":
+                    //do operation on board
+                if inputmsg[0] = "#":
+                    read_write_SDcard(); //writing color info to lights in SD card
+                else:
+                    //device info
+                    //device No, wakeup/sleep, 
+                    read_write_SDcard(); //writing device info in SD card
+                 
+                 
+                 
+                 
+#### Arduino
+              
+              // in loop program of Arduino
+             if read_write_SDcard():
+                //do operations on devices
+            else:
+                //set led as HIGH to show it is failed to read
