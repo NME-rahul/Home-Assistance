@@ -1,6 +1,6 @@
 # Home-Assistance
 
-    Sudo code:
+    pseudo code:
     
     //open when needed
     var read_buffer;
