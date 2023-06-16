@@ -30,7 +30,7 @@
     read_write_SDcard():
       Sense_carrier();
       if(!error):
-        then read/write data as well as the buffer
+        then read/write data as well as the buffer and set buffer as 0
         if write_buffer is available:
           then write;
         if read_buffer is available:
