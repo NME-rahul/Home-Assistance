@@ -22,8 +22,8 @@
       if not free:
         sense_count = sense_count + 1;
         if sense_count < 15:
-        sense again;
-        set error message as "Error: SD card is busy with other device.";
+          try again after some radom amount of time;
+          set error message as "Error: SD card is busy with other device.";
       else:
         set led to HIGH to show count exceed;
 
